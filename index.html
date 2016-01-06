@@ -2,155 +2,162 @@
 <html>
     <head>
         <title>Sudoku</title>
+        <link rel="stylesheet" href="style.css">
+        
         <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-        <style>
-            table{
-                width: 10px;
-                margin: 200px;
-            }
-            td{
-                width:44%;
-                border: 1px solid black;
-                padding: 10px;
-                
-        </style>
+      
     </head>
     <body>
-        <table>
-            
-           
-        
-            
-           
-            <tr>
-               <td><input class="cc1" size="1" maxlength="1"></td>
-               <td><input class="cc1" size="1" maxlength="1"></td>
-                <td><input class="cc1" size="1" maxlength="1"></td>
-               <td><input class="cc1" size="1" maxlength="1"></td>
-                <td><input class="cc1" size="1" maxlength="1"></td>
-                <td><input class="cc1" size="1" maxlength="1"></td>
-               <td><input class="cc1" size="1" maxlength="1"></td>
-                <td><input class="cc1" size="1" maxlength="1"></td>
-                <td><input class="cc1" size="1" maxlength="1"></td>
-                
-            </tr>
-             <tr>
-               <td><input class="cc1" size="1" maxlength="1"></td>
-                 <td><input class="cc1" size="1" maxlength="1"></td>
-                 <td><input class="cc1" size="1" maxlength="1"></td>
-               <td><input class="cc1" size="1" maxlength="1"></td>
-                 <td><input class="cc1" size="1" maxlength="1"></td>
-                 <td><input class="cc1" size="1" maxlength="1"></td>
-               <td><input class="cc1" size="1" maxlength="1"></td>
-                 <td><input class="cc1" size="1" maxlength="1"></td>
-                 <td><input class="cc1" size="1" maxlength="1"></td>
-                
-            </tr>
-            <tr>
-               <td><input class="cc1" size="1" maxlength="1"></td>
-                <td><input class="cc1" size="1" maxlength="1"></td>
-                <td><input class="cc1" size="1" maxlength="1"></td>
-               <td><input class="cc1" size="1" maxlength="1"></td>
-                <td><input class="cc1" size="1" maxlength="1"></td>
-                <td><input class="cc1" size="1" maxlength="1"></td> 
-               <td><input class="cc1" size="1" maxlength="1"></td>
-                <td><input class="cc1" size="1" maxlength="1"></td>
-                <td><input class="cc1" size="1" maxlength="1"></td>
-                
-            </tr>
-             
-            <tr>
-               <td><input class="cc1" size="1" maxlength="1"></td>
-                <td><input class="cc1" size="1" maxlength="1"></td>
-                <td><input class="cc1" size="1" maxlength="1"></td>
-               <td><input class="cc1" size="1" maxlength="1"></td>
-                <td><input class="cc1" size="1" maxlength="1"></td>
-                <td><input class="cc1" size="1" maxlength="1"></td> 
-               <td><input class="cc1" size="1" maxlength="1"></td>
-                <td><input class="cc1" size="1" maxlength="1"></td>
-                <td><input class="cc1" size="1" maxlength="1"></td>
-                
-            </tr>
-             <tr>
-               <td><input class="cc1" size="1" maxlength="1"></td>
-                <td><input class="cc1" size="1" maxlength="1"></td>
-                <td><input class="cc1" size="1" maxlength="1"></td>
-               <td><input class="cc1" size="1" maxlength="1"></td>
-                <td><input class="cc1" size="1" maxlength="1"></td>
-                <td><input class="cc1" size="1" maxlength="1"></td> 
-               <td><input class="cc1" size="1" maxlength="1"></td>
-                <td><input class="cc1" size="1" maxlength="1"></td>
-                <td><input class="cc1" size="1" maxlength="1"></td>
-                
-            </tr>
-            <tr>
-               <td><input class="cc1" size="1" maxlength="1"></td>
-                <td><input class="cc1" size="1" maxlength="1"></td>
-                <td><input class="cc1" size="1" maxlength="1"></td>
-               <td><input class="cc1" size="1" maxlength="1"></td>
-                <td><input class="cc1" size="1" maxlength="1"></td>
-                <td><input class="cc1" size="1" maxlength="1"></td> 
-               <td><input class="cc1" size="1" maxlength="1"></td>
-                <td><input class="cc1" size="1" maxlength="1"></td>
-                <td><input class="cc1" size="1" maxlength="1"></td>
-                
-            </tr>
-             
-            <tr>
-               <td><input class="cc1" size="1" maxlength="1"></td>
-                <td><input class="cc1" size="1" maxlength="1"></td>
-                <td><input class="cc1" size="1" maxlength="1"></td>
-               <td><input class="cc1" size="1" maxlength="1"></td>
-                <td><input class="cc1" size="1" maxlength="1"></td>
-                <td><input class="cc1" size="1" maxlength="1"></td> 
-               <td><input class="cc1" size="1" maxlength="1"></td>
-                <td><input class="cc1" size="1" maxlength="1"></td>
-                <td><input class="cc1" size="1" maxlength="1"></td>
-                
-            </tr>
-             <tr>
-               <td><input class="cc1" size="1" maxlength="1"></td>
-                <td><input class="cc1" size="1" maxlength="1"></td>
-                <td><input class="cc1" size="1" maxlength="1"></td>
-               <td><input class="cc1" size="1" maxlength="1"></td>
-                <td><input class="cc1" size="1" maxlength="1"></td>
-                <td><input class="cc1" size="1" maxlength="1"></td> 
-               <td><input class="cc1" size="1" maxlength="1"></td>
-                <td><input class="cc1" size="1" maxlength="1"></td>
-                <td><input class="cc1" size="1" maxlength="1"></td>
-                
-            </tr>
-            <tr>
-               <td><input class="cc1" size="1" maxlength="1"></td>
-                <td><input class="cc1" size="1" maxlength="1"></td>
-                <td><input class="cc1" size="1" maxlength="1"></td>
-               <td><input class="cc1" size="1" maxlength="1"></td>
-                <td><input class="cc1" size="1" maxlength="1"></td>
-                <td><input class="cc1" size="1" maxlength="1"></td> 
-               <td><input class="cc1" size="1" maxlength="1"></td>
-                <td><input class="cc1" size="1" maxlength="1"></td>
-                <td><input class="cc1" size="1" maxlength="1"></td>
-                
-            </tr>
-        </table>
+        <table id="game" border="1" >
+      <tr class="rowe">
+        <td id="r0c0"><input type="text" maxlength="1"></td>
+        <td id="r0c1"><input type="text" maxlength="1"></td>
+        <td id="r0c2"><input type="text" maxlength="1"></td>
+        <td id="r0c3"><input type="text" maxlength="1"></td>
+        <td id="r0c4"><input type="text" maxlength="1"></td>
+        <td id="r0c5"><input type="text" maxlength="1"></td>
+        <td id="r0c6"><input type="text" maxlength="1"></td>
+        <td id="r0c7"><input type="text" maxlength="1"></td>
+        <td id="r0c8"><input type="text" maxlength="1"></td>
+      </tr>
+      <tr class="rowe">
+        <td id="r1c0"><input type="text" maxlength="1"></td>
+        <td id="r1c1"><input type="text" maxlength="1"></td>
+        <td id="r1c2"><input type="text" maxlength="1"></td>
+        <td id="r1c3"><input type="text" maxlength="1"></td>
+        <td id="r1c4"><input type="text" maxlength="1"></td>
+        <td id="r1c5"><input type="text" maxlength="1"></td>
+        <td id="r1c6"><input type="text" maxlength="1"></td>
+        <td id="r1c7"><input type="text" maxlength="1"></td>
+        <td id="r1c8"><input type="text" maxlength="1"></td>
+      </tr>
+      <tr class="rowe">
+        <td id="r2c0"><input type="text" maxlength="1"></td>
+        <td id="r2c1"><input type="text" maxlength="1"></td>
+        <td id="r2c2"><input type="text" maxlength="1"></td>
+        <td id="r2c3"><input type="text" maxlength="1"></td>
+        <td id="r2c4"><input type="text" maxlength="1"></td>
+        <td id="r2c5"><input type="text" maxlength="1"></td>
+        <td id="r2c6"><input type="text" maxlength="1"></td>
+       <td id="r2c7"><input type="text" maxlength="1"></td>
+        <td id="r2c8"><input type="text" maxlength="1"></td>
+      </tr>
+      <tr class="rowe">
+        <td id="r3c0"><input type="text" maxlength="1"></td>
+        <td id="r3c1"><input type="text" maxlength="1"></td>
+        <td id="r3c2"><input type="text" maxlength="1"></td>
+        <td id="r3c3"><input type="text" maxlength="1"></td>
+        <td id="r3c4"><input type="text" maxlength="1"></td>
+        <td id="r3c5"><input type="text" maxlength="1"></td>
+        <td id="r3c6"><input type="text" maxlength="1"></td>
+        <td id="r3c7"><input type="text" maxlength="1"></td>
+        <td id="r3c8"><input type="text" maxlength="1"></td>
+      </tr>
+      <tr class="rowe">
+        <td id="r4c0"><input type="text" maxlength="1"></td>
+        <td id="r4c1"><input type="text" maxlength="1"></td>
+        <td id="r4c2"><input type="text" maxlength="1"></td>
+        <td id="r4c3"><input type="text" maxlength="1"></td>
+        <td id="r4c4"><input type="text" maxlength="1"></td>
+        <td id="r4c5"><input type="text" maxlength="1"></td>
+        <td id="r4c6"><input type="text" maxlength="1"></td>
+        <td id="r4c7"><input type="text" maxlength="1"></td>
+        <td id="r4c8"><input type="text" maxlength="1"></td>
+      </tr>
+      <tr class="rowe">
+        <td id="r5c0"><input type="text" maxlength="1"></td>
+        <td id="r5c1"><input type="text" maxlength="1"></td>
+        <td id="r5c2"><input type="text" maxlength="1"></td>
+        <td id="r5c3"><input type="text" maxlength="1"></td>
+       <td id="r5c4"><input type="text" maxlength="1"></td>
+        <td id="r5c5"><input type="text" maxlength="1"></td>
+        <td id="r5c6"><input type="text" maxlength="1"></td>
+        <td id="r5c7"><input type="text" maxlength="1"></td>
+        <td id="r5c8"><input type="text" maxlength="1"></td>
+      </tr>
+      <tr class="rowe">
+        <td id="r6c0"><input type="text" maxlength="1"></td>
+        <td id="r6c1"><input type="text" maxlength="1"></td>
+        <td id="r6c2"><input type="text" maxlength="1"></td>
+        <td id="r6c3"><input type="text" maxlength="1"></td>
+        <td id="r6c4"><input type="text" maxlength="1"></td>
+        <td id="r6c5"><input type="text" maxlength="1"></td>
+        <td id="r6c6"><input type="text" maxlength="1"></td>
+        <td id="r6c7"><input type="text" maxlength="1"></td>
+        <td id="r6c8"><input type="text" maxlength="1"></td>
+      </tr>
+      <tr class="rowe">
+        <td id="r7c0"><input type="text" maxlength="1"></td>
+        <td id="r7c1"><input type="text" maxlength="1"></td>
+        <td id="r7c2"><input type="text" maxlength="1"></td>
+        <td id="r7c3"><input type="text" maxlength="1"></td>
+        <td id="r7c4"><input type="text" maxlength="1"></td>
+        <td id="r7c5"><input type="text" maxlength="1"></td>
+        <td id="r7c6"><input type="text" maxlength="1"></td>
+        <td id="r7c7"><input type="text" maxlength="1"></td>
+        <td id="r7c8"><input type="text" maxlength="1"></td>
+      </tr>
+      <tr class="rowe">
+        <td id="r8c0"><input type="text" maxlength="1"></td>
+       <td id="r8c1"><input type="text" maxlength="1"></td>
+        <td id="r8c2"><input type="text" maxlength="1"></td>
+        <td id="r8c3"><input type="text" maxlength="1"></td>
+        <td id="r8c4"><input type="text" maxlength="1"></td>
+        <td id="r8c5"><input type="text" maxlength="1"></td>
+        <td id="r8c6"><input type="text" maxlength="1"></td>
+        <td id="r8c7"><input type="text" maxlength="1"></td>
+        <td id="r8c8"><input type="text" maxlength="1"></td>
+      </tr>
+    </table>
+        <div class="btn">Validation</div>
+       
+       
+        <script src="sudoku.js"></script>
         <script> 
             $.ajax({
-                url:"http://www.swolebrain.com:4004/sudoku",
-                
-                success:function(res,text,xhr){
-                      
-     
-                   
-                       
+                url:"http://104.131.17.187:4004/sudoku",
+                success:function(resp,text,xhr){
+                    console.log(resp);
+                    for(var r= 0; r<9; r++){
+                        for(var c= 0; c<9; c++){
+                            if(resp[r][c]!=""){
+                                $("#r"+r+"c"+c).html(resp[r][c]);
+                            }
+                        }
                     }
-                    
                 }
             });
-        </script>
-
-       
+            $(".btn").click(function(){
+                var reload=loadUserBoard();
+                 var board = new Sudoku(reload);
+                alert("Sudoku validation result:"+board.isValid());
+            });
             
-        
+            
+            
+            
+            
+             function loadUserBoard(){
+                var result=[new Array(9), new Array(9), new Array(9), new Array(9),
+                new Array(9), new Array(9), new Array(9), new Array(9),
+                            new Array(9)
+                           ];
+                for(var r = 0; r < 9; r++){
+                    for(var c =0; c <9; c++){
+                        var cellid = "#r"+r+"c"+c;
+                        var cellValue;
+                        if($(cellid).find("input")[0]){
+                            cellValue= $(cellid).find("input").val()
+                        }
+                        else{
+                            cellValue = $(cellid).html();
+                        }
+                        result[r][c] =cellValue;
+                    }
+                    return result;
+                }
+             }
+        </script>
     </body>
 </html>
             
@@ -159,4 +166,3 @@
                 
         
   
-l
